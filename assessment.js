@@ -52,6 +52,13 @@ assessmentButton.onclick = () => {
   tweetDivided.appendChild(script);
 };
 
+userNameInput.onkeydown = event => {
+    if (event.key === 'Enter') {
+        //TODOボタンのonclick()処理を呼び出す
+        assessmentButton.onclick();
+    }
+};
+
 const answers = [
   '{userName}のいいところは声です。{userName}の特徴的な声はみなを惹きつけ、心に残ります。',
   '{userName}のいいところはまなざしです。{userName}に見つめられた人は、気になって仕方がないでしょう。',
